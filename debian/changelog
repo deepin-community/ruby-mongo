@@ -1,0 +1,90 @@
+ruby-mongo (2.5.1-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Tue, 29 Dec 2020 03:29:54 +0100
+
+ruby-mongo (2.5.1-1) unstable; urgency=medium
+
+  * New upstream version 2.5.1
+    + Added support for MongoDB 3.6
+    + Dropped support for MongoDB 2.4
+    + Bump minimum ruby-bson version to 4.3.0
+  * Drop d/patches
+  * Bump Standards-Version to 4.1.3; no changes needed
+  * Bump dh compat to 11; no changes needed
+  * Switch Vcs-* URLs to salsa.d.o
+  * d/control: switch Homepage to https://
+  * d/watch: switch URL to Github and handle betas
+  * Drop d/ruby-tests.rb; refers to non-existent tests
+  * Ship README.md under docs
+  * Allow autopkgtests to write to stderr
+
+ -- Apollon Oikonomopoulos <apoikos@debian.org>  Fri, 30 Mar 2018 00:16:58 +0300
+
+ruby-mongo (2.4.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Drop unneeded build-dependencies on ruby-mocha and ruby-shoulda
+  * Update ruby-bson dependency (>= 4.2.1, << 5.0.0)
+  * Add DEP-8 tests
+
+ -- Apollon Oikonomopoulos <apoikos@debian.org>  Wed, 21 Dec 2016 15:01:32 +0200
+
+ruby-mongo (2.4.0-1) unstable; urgency=medium
+
+  [ Cédric Boutillier ]
+  * Bump debhelper compatibility level to 9
+  * Remove version in the gem2deb build-dependency
+  * Use https:// in Vcs-* fields
+  * Use https:// in Vcs-* fields
+  * Bump Standards-Version to 3.9.7 (no changes needed)
+  * Run wrap-and-sort on packaging files
+
+  [ Apollon Oikonomopoulos ]
+  * New upstream version 2.4.0
+    + Support for MongoDB up to and including 3.4
+  * Bump Standards to 3.9.8; no changes needed
+  * Require ruby-bson >= 4.2.0
+  * Add myself to Uploaders
+  * Drop d/patches; not required anymore
+
+ -- Apollon Oikonomopoulos <apoikos@debian.org>  Tue, 20 Dec 2016 12:44:14 +0200
+
+ruby-mongo (1.10.0-1) unstable; urgency=medium
+
+  * Imported Upstream version 1.10.0
+  * Refresh patch enable_run_tests.patch
+  * Bump dependency on ruby-bson(-ext) to 1.10.0
+  * Change the upstream copyright holder to MongoDB, Inc
+
+ -- Prach Pongpanich <prachpub@gmail.com>  Thu, 15 May 2014 13:18:50 +0700
+
+ruby-mongo (1.9.2-2) unstable; urgency=medium
+
+  * Update enable_run_tests.patch to require mocha/setup instead of mocha,
+    Thanks to Cédric Boutillier (Closes: #743106)
+  * Bump standards-Version to 3.9.5 (no changes needed)
+
+ -- Prach Pongpanich <prachpub@gmail.com>  Thu, 03 Apr 2014 14:08:07 +0700
+
+ruby-mongo (1.9.2-1) unstable; urgency=low
+
+  * Imported Upstream version 1.9.2
+  * Bump dependency on ruby-bson and ruby-bson-ext to 1.9.2
+
+ -- Prach Pongpanich <prachpub@gmail.com>  Thu, 05 Sep 2013 11:58:33 +0700
+
+ruby-mongo (1.9.1-1) unstable; urgency=low
+
+  * New upstream release
+  * Bump dependency version
+
+ -- Prach Pongpanich <prachpub@gmail.com>  Fri, 12 Jul 2013 20:54:08 +0700
+
+ruby-mongo (1.9.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #705501)
+
+ -- Prach Pongpanich <prachpub@gmail.com>  Tue, 11 Jun 2013 23:03:11 +0700

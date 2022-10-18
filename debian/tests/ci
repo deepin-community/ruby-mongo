@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# All tests expect the socket to be accessible under /tmp, so symlink it there
+ln -s /run/mongodb/mongodb-27017.sock /tmp
+
+rspec
